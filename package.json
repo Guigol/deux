@@ -9,7 +9,9 @@
     "build": "tsc",
     "start": "node -r dotenv/config dist/index.js",
     "start:dev": "ts-node -r dotenv/config src/index.ts",
-    "start:demon": "nodemon -e .ts,.js,.json -w src -x \"npm run start:dev\""
+    "start:demon": "nodemon -e .ts,.js,.json -w src -x \"npm run start:dev\"",
+   "start:calculator": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/exos/calculatrice.ts\"",
+   "start:todolist": "nodemon -e .ts,.js,.json -w src -x \"ts-node -r dotenv/config src/exos/todoList.ts\""
   },
   "author": "AA",
   "license": "ISC",
@@ -20,6 +22,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "fastify": "^4.11.0"
   }
 }

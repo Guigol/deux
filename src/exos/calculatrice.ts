@@ -65,7 +65,6 @@ type OperationOwner = {
 }
 
 app.get<AddRoute & OperationOwner>('/calc/:x/:y', (request, reply) => {
-  console.table(request.headers)
   const operation = request.query.operation || 'add'
   const x = parseInt(request.params.x)
   const y = parseInt(request.params.y)
@@ -100,4 +99,3 @@ app.listen(
     )
   },
 )
-

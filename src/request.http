@@ -1,0 +1,31 @@
+GET http://127.0.0.1:5353/add/10/5
+
+###
+
+GET http://127.0.0.1:5353/sub/20/10
+
+###
+
+GET http://127.0.0.1:5353/mul/9/18
+
+###
+
+GET http://127.0.0.1:5353/sub/div/16/2
+
+###
+
+GET http://127.0.0.1:5353/calc/20/10?operation=sub&test=a&foo=bar
+Test: coucou
+
+###
+
+POST http://127.0.0.1:5353/articles
+Content-Type: application/json
+
+{
+  "title": "Coucou",
+}
+
+###
+
+GET http://127.0.0.1:5353/todos/todoList
