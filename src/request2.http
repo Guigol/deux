@@ -1,31 +1,14 @@
 GET http://127.0.0.1:5353/todos/
 
 
+###
 
-
+GET http://127.0.0.1:5353/todos/31681531561351
 
 ###
 
-# GET http://127.0.0.1:5353/sub/20/10
+DELETE http://127.0.0.1:5353/todos/256546
 
-# ###
 
-# GET http://127.0.0.1:5353/mul/9/18
 
-# ###
 
-# GET http://127.0.0.1:5353/sub/div/16/2
-
-# ###
-
-# GET http://127.0.0.1:5353/calc/20/10?operation=sub&test=a&foo=bar
-# Test: coucou
-
-# ###
-
-# POST http://127.0.0.1:5353/articles
-# Content-Type: application/json
-
-# {
-#   "title": "Coucou",
-# }
