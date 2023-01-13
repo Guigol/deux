@@ -1,5 +1,49 @@
-GET http://127.0.0.1:5353/todos/
+GET http://127.0.0.1:5353/add/10/5
 
+###
+
+GET http://127.0.0.1:5353/sub/20/10
+
+###
+
+GET http://127.0.0.1:5353/mul/50/3
+
+###
+
+GET http://127.0.0.1:5353/div/150/25
+
+###
+
+GET http://127.0.0.1:5353/div/150/0
+
+###
+
+GET http://127.0.0.1:5353/calc/20/10?operation=sub&test=a&foo=bar
+Test: coucou
+
+###
+
+POST http://127.0.0.1:5353/articles
+Content-Type: application/json
+
+{
+  "title": "Coucou",
+}
+
+###
+
+GET http://127.0.0.1:5353/todos
+
+###
+
+POST http://127.0.0.1:5353/todos
+Content-Type: application/json
+
+{ 
+  "i": 256546,
+  "coucou": "djdsmlfsdj",
+  "dfkfhfh": "dfksdhflkshfldsh"
+}
 
 ###
 
@@ -9,6 +53,41 @@ GET http://127.0.0.1:5353/todos/31681531561351
 
 DELETE http://127.0.0.1:5353/todos/256546
 
+###
 
+POST http://127.0.0.1:5353/calculatrix
+Content-Type: application/json
 
+{
+  "operation": "add",
+  "x": 10,
+  "y": 20
+}
 
+###
+
+POST http://127.0.0.1:5353/pizzas
+Content-Type: application/json
+
+{
+  "name": "Coquelicot",
+  "prix": 20.00
+}
+
+###
+
+GET  http://127.0.0.1:5353/pizzas
+Content-Type: application/json
+
+###
+
+PATCH http://127.0.0.1:5353/pizzas/63c162b972f4ba61f292ec8d
+Content-Type: application/json
+
+{
+  "prix": 10
+}
+
+###
+
+DELETE http://127.0.0.1:5353/pizzas/63c15f8972f4ba61f292ec88
